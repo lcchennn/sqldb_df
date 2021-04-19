@@ -52,19 +52,19 @@ Reads table from csv file and writes to database.
 ### 1. Get DataFrame Information
 - Enter DataFrame name.
 <br>![image](https://user-images.githubusercontent.com/52438350/115195382-8a93fd80-a0a3-11eb-8de6-96701777b5c0.png)
-<br>- Return information.
+- Return information.
 <br>![image](https://user-images.githubusercontent.com/52438350/115195438-9bdd0a00-a0a3-11eb-9bd2-ff0d078c211c.png)
 
 ### 2. Get Percentile
 - Enter DataFrame name and desired percentile.
 <br>![image](https://user-images.githubusercontent.com/52438350/115195495-ae574380-a0a3-11eb-8fa7-e22f046d5695.png)
-<br>- Return information.
+- Return information.
 <br>![image](https://user-images.githubusercontent.com/52438350/115195549-be6f2300-a0a3-11eb-912e-24b5332d1719.png)
 
 ### 3. Return Common DataFrame Columns
 - Enter DataFrame names.
 <br>![image](https://user-images.githubusercontent.com/52438350/115195595-cb8c1200-a0a3-11eb-8006-4b05075df9c7.png)
-<br>- Return information.
+- Return information.
 <br>![image](https://user-images.githubusercontent.com/52438350/115195663-df377880-a0a3-11eb-9150-0af68c82418b.png)
 
 
