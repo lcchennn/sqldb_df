@@ -1,1 +1,22 @@
+<html>
+<body>
+<h1>Li-Chia Chen Assignment Demo</h1>
 
+<br>List of available dfs: {{files}}</br>
+
+<br><b>1. Get DataFrame Information</b></br>
+<form action='/tables' method="post">
+    <br>DataFrame Name: <input type="text" name="input_csv"></br>
+    <input type="submit">
+</form>
+
+
+<br><b>2. Get Percentile</b></br>
+<form action='/percentiles' method="post">
+    <br>DataFrame Name: <input type="text" name="input_csv"></br>
+    <br>Percentile: <input type="number" name="input_pct"></br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

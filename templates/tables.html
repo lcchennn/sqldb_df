@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Table Contents</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+    <h1>Action Successful!</h1>
+
+    <h2>DataFrame: {{name}}</h2>
+    <h3>Table Shape: {{tshape[0]}} rows, {{tshape[1]}} columns
+        <h4>
+            {% block content %}
+            {{table | safe}}
+            {% endblock %}
+        </h4>
+</div>
