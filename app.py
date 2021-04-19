@@ -50,6 +50,21 @@ def pct():
     result = p_df.to_html()
     return render_template('pct.html', name=csv_name, table=result, input_pct=input_pct)
 
+
+@app.route('/commons', methods=['post'])
+def commons():
+    df1_name = request.form.get('input_df1')
+    df2_name = request.form.get('input_df2')
+    path1 = r'https://raw.githubusercontent.com/lcchennn/sqldb_df/main/' + df1_name + '.csv'
+    path2 = r'https://raw.githubusercontent.com/lcchennn/sqldb_df/main/' + df2_name + '.csv'
+
+    df1 = lcchendb.readtodf(path1)
+    df2 = lcchendb.readtodf(path2)
+
+    commons = lcchendb.common_column(df1, df2)
+    commons = ', '.join(commons)
+    return render_template('commons.html', df1=df1_name, df2=df2_name, commons=commons)
+
 @app.route('/enternew')
 def new_student():
    return render_template('sqlitedb.html')
