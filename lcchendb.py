@@ -26,14 +26,13 @@ def readfromdb(dbname, tablename):
         print(e)
     return df
 
-
 def dftosqldb(df, tablename, dbname):
-    disk_engine = create_engine(r'sqlite:///' + dbname + '.db')
+    disk_engine = create_engine(r'sqlite:///' + dbname)
     df.to_sql(tablename, disk_engine, if_exists='append')
     return disk_engine
 
 def dftosqlfile(df, tablename, sqlfilename):
-    disk_engine = create_engine(r'sqlite:///' + sqlfilename + '.sqlite')
+    disk_engine = create_engine(r'sqlite:///' + sqlfilename)
     df.to_sql(tablename, disk_engine, if_exists='append')
     return disk_engine
 
