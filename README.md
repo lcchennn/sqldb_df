@@ -16,7 +16,7 @@ import lcchendb
 ## Examples
 ### lcchendb.readfromdf(path)
 Reads csv file and return as df.
-<br>*path:* File path, for example, 'https://raw.githubusercontent.com/lcchennn/sqldb_df/main/bread_noodle.csv'
+<br>*path:* File path, for example, 'https://raw.githubusercontent.com/lcchennn/sqldb_df/main/filename.fileextension'
 <br><br>![image](https://user-images.githubusercontent.com/52438350/115191821-cbd5de80-a09e-11eb-8a0f-67a711b371ad.png)
 
 ### lcchendb.readfromdb(dbname, tablename)
