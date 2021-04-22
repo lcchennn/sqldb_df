@@ -2,6 +2,8 @@
 <b>Date:</b> Apr 18, 2021 <b>Version:</b> 1.0.0
 
 ## Environment Requirements
+- Python3
+- Required packages: sqlite3, pandas, numpy, sqlalchemy
 
 ## Downloading
 Download Package [here](https://github.com/lcchennn/sqldb_df/blob/688163ab22b904b5c77a41127486bf7b3388bcc2/lcchendb.py)
